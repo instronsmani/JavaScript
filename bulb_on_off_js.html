@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <img id="BulbImage" onclick="myImage()" src="/home/rently/JavaScript/bulb_off.png" width="500px" height="500px">
+    <script>
+        function myImage()
+        {
+            var image = document.getElementById('BulbImage');
+            if(image.src.match("bulb_on")){
+                image.src="/home/rently/JavaScript/bulb_off.png"
+            }
+            else{
+                image.src="/home/rently/JavaScript/bulb_on.png"
+            }
+        }
+    </script>
+</body>
+</html>
